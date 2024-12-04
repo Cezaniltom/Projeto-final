@@ -9,7 +9,7 @@ import { FilmsSeriesCatalogComponent } from "./pages/films-series-catalog/films-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, CardFaSComponent, FilmsSeriesCatalogComponent],
+  imports: [RouterOutlet, HeaderComponent, FilmsSeriesCatalogComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
