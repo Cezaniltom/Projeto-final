@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 
 import { HeaderComponent } from './shared/header/header.component';
 import { CardFaSComponent } from './shared/card-fa-s/card-fa-s.component';
+import { FilmsSeriesCatalogComponent } from "./pages/films-series-catalog/films-series-catalog.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, CardFaSComponent],
+  imports: [RouterOutlet, HeaderComponent, CardFaSComponent, FilmsSeriesCatalogComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
