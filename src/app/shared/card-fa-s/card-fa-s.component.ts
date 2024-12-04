@@ -12,7 +12,7 @@ import { FilmsSeries } from '../../models/films-series';
   styleUrl: './card-fa-s.component.scss'
 })
 export class CardFaSComponent {
-  filmsSeries = {
+  filmsSeries: FilmsSeries = {
     title: "Deadpool & Wolverine",
     streamer: "",
     imageLink: "https://m.media-amazon.com/images/S/pv-target-images/dd6fb66997dd4cb5606b587bb255d2cd2cec20ecbd11852a8f6b07a1358d09a1.jpg",
