@@ -1,6 +1,10 @@
-<app-card-fa-s [filmsSeries]="filmsSeriesArray[0]"></app-card-fa-s>
-<app-card-fa-s [filmsSeries]="filmsSeriesArray[1]"></app-card-fa-s>
-<app-card-fa-s></app-card-fa-s>
-<app-card-fa-s></app-card-fa-s>
-<app-card-fa-s></app-card-fa-s>
-<app-card-fa-s></app-card-fa-s>
+<div class="container">
+    @for(filmsSeriesObj of filmsSeriesArray; track filmsSeriesObj.id) {
+        <app-card-fa-s [filmsSeries]="filmsSeriesObj"></app-card-fa-s>
+    }
+    @empty {
+        <h2>Não há filmes registrados no momento!</h2>
+    }
+    <!-- <app-card-fa-s></app-card-fa-s>
+    <app-card-fa-s></app-card-fa-s> -->
+</div>

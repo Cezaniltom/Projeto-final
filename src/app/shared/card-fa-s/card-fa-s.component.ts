@@ -12,6 +12,12 @@ import { FilmsSeries } from '../../models/films-series';
   styleUrl: './card-fa-s.component.scss'
 })
 export class CardFaSComponent {
-  @Input() filmsSeries?: FilmsSeries;
+    @Input() filmsSeries?: FilmsSeries = {
+      id: 0,
+      title: "Film Default",
+      imageLink: "https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg",
+      price: 0,
+      description: "Mussum Ipsum, cacilds vidis litro abertis.  Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Casamentiss faiz malandris se pirulitá. Bota 1 metro de cachacis aí pra viagem! Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!"
+  }
 
 }
