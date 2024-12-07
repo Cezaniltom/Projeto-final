@@ -1,6 +1,6 @@
 <div class="container">
     @for(filmsSeriesObj of filmsSeriesArray; track filmsSeriesObj.id) {
-        <app-card-fa-s [filmsSeries]="filmsSeriesObj"></app-card-fa-s>
+        <app-card-fa-s [filmsSeries]="filmsSeriesObj" (warnFilmsSeriesCatalog)="warnParentAboutItemAddition(filmsSeriesObj)"></app-card-fa-s>
     }
     @empty {
         <h2>Não há filmes registrados no momento!</h2>

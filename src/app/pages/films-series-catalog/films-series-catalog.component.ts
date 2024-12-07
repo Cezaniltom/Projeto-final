@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FilmsSeries } from '../../models/films-series';
 import { CardFaSComponent } from "../../shared/card-fa-s/card-fa-s.component";
 
@@ -10,6 +10,7 @@ import { CardFaSComponent } from "../../shared/card-fa-s/card-fa-s.component";
   styleUrl: './films-series-catalog.component.scss'
 })
 export class FilmsSeriesCatalogComponent {
+  @Output() warnApp: EventEmitter<FilmsSeries> = new EventEmitter();
   filmsSeriesArray: FilmsSeries[] = [
     {
       id: 1,
@@ -33,4 +34,9 @@ export class FilmsSeriesCatalogComponent {
       description: "Acompanhe a história de Desmond T. Doss, um médico do exército americano que, durante a Segunda Guerra Mundial, se recusa a pegar em armas."
     }
   ];
+
+  warnParentAboutItemAddition(filmsSeries: FilmsSeries) {
+    console.log(`iaiaiaiiaiiaiaaii ${filmsSeries.title}`);
+    this.warnApp.emit(filmsSeries);
+  }
 }

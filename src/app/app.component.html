@@ -2,11 +2,11 @@
 
 <mat-drawer-container autosize>
     <mat-drawer #drawer mode="side">
-        <p>Auto-resizing sidenav</p>
+        <app-cart [cartArr]="cartItemsArray"></app-cart>
     </mat-drawer>
 
     <div>
-        <app-films-series-catalog></app-films-series-catalog>
+        <app-films-series-catalog (warnApp)="addItemToCart($event)"></app-films-series-catalog>
     </div>
 </mat-drawer-container>
 

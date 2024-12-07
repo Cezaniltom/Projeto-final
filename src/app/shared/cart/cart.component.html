@@ -1,0 +1,23 @@
+<mat-list class="nav-itens">
+    @for(item of cartItemsArray; track item.product.id) {
+        <mat-list-item>
+            <div class="list-item">
+                <div>{{item.product.title}}</div>
+                <div>
+                    <button (click)="addItem(item)" mat-icon-button [disabled]="item.quantity >= 10">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                    <span>{{ item.quantity }}</span>
+                    <button (click)="removeItem(item)" mat-icon-button>
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    }
+</mat-list>
+
+<b>
+    Valor total: {{ totalPrice | currency:'R$' }}
+</b>

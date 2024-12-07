@@ -1,0 +1,10 @@
+.nav-itens {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.list-item {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
