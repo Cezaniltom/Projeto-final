@@ -19,21 +19,5 @@ import { FilmsSeries } from './models/films-series';
 })
 export class AppComponent {
   title = 'films-and-series-ecommerce';
-  cartItemsArray: CartItem[] = [];
 
-  addItemToCart(filmsSeries: FilmsSeries) {
-    const foundIndex: number = this.cartItemsArray.findIndex((item) => {
-      return item.product.id === filmsSeries.id
-    })
-    if(foundIndex == -1) {
-      this.cartItemsArray.push({
-        product: filmsSeries,
-        quantity: 1
-      })
-    } else {
-      this.cartItemsArray[foundIndex].quantity++;
-    }
-    
-    console.log(this.cartItemsArray);
-  }
 }

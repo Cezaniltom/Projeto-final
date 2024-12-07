@@ -4,5 +4,5 @@ export interface FilmsSeries {
     imageLink: string;
     price: number;
     description: string;
-    storage?: number;
+    storage: number;
 }

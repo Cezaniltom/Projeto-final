@@ -4,7 +4,7 @@
             <div class="list-item">
                 <div>{{item.product.title}}</div>
                 <div>
-                    <button (click)="addItem(item)" mat-icon-button [disabled]="item.quantity >= 10">
+                    <button (click)="addItem(item)" mat-icon-button [disabled]="item.quantity >= item.product.storage">
                         <mat-icon>add</mat-icon>
                     </button>
                     <span>{{ item.quantity }}</span>
@@ -19,5 +19,5 @@
 </mat-list>
 
 <b>
-    Valor total: {{ totalPrice | currency:'R$' }}
+    Valor total: {{ totalPrice() | currency:'R$' }}
 </b>
