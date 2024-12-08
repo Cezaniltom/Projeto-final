@@ -1,0 +1,26 @@
+{
+    "filmsSeries": [
+        {
+            "id": "1",
+            "title": "Deadpool & Wolverine",
+            "imageLink": "https://www.justwatch.com/images/poster/322083854/s332/deadpool-3",
+            "price": 49.99,
+            "description": "Wolverine está se recuperando quando cruza seu caminho com Deadpool. Juntos, eles formam uma equipe e enfrentam um inimigo em comum.",
+            "storage": 9
+        },
+        {
+            "id": "69f9",
+            "title": "Round 6",
+            "imageLink": "https://portalpopline.com.br/wp-content/uploads/2024/11/round-6-poster.jpg",
+            "price": 25.99,
+            "description": "Round 6 voltará a acompanhar Gi-hun, que retorna à competição sangrenta numa tentativa de salvar o maior número possível de participantes.",
+            "availableInStock": 8
+        }
+], "users": [
+        {
+            "id": "1",
+            "email": "admin@admin.com",
+            "password": "admin123"
+        }
+    ] 
+}

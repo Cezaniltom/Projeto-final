@@ -81,7 +81,5 @@ export class CartService {
     } else {
       this.addItem(this.cartItemsArray[index])
     }
-    
-    console.log(this.cartItemsArray);
   }
 }
